@@ -8,7 +8,7 @@ import plotly.graph_objs as go
 import datetime
 
 # Load the saved model
-model = load_model('models/model_stockvision.h5')
+model = load_model('model_stockvision.h5')
 
 # App title and subtitle
 st.markdown("""
