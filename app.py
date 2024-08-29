@@ -29,16 +29,7 @@ prediction_range = st.sidebar.slider('Prediction Range (days)', 1, 30, 7)
 start_date = st.sidebar.date_input('Start Date', pd.to_datetime('2020-01-01'))
 end_date = st.sidebar.date_input('End Date', pd.to_datetime('today'))
 
-# Tooltips
-st.sidebar.subheader('Tooltips')
-st.sidebar.write('''
-- **Stock Ticker**: The symbol representing the stock (e.g., GOOGL for Google).
-- **Prediction Range**: Number of future days to predict.
-- **Start Date**: The start date for fetching historical data.
-- **End Date**: The end date for fetching historical data.
-- **Predict Button**: Click to generate predictions.
-''')
-
+# Predict button directly under the input fields
 if st.sidebar.button('Predict'):
     # Fetch the data
     data = yf.download(stock_ticker, start=start_date, end=end_date)
@@ -102,7 +93,17 @@ if st.sidebar.button('Predict'):
                           xaxis_title='Date',
                           yaxis_title='Stock Price',
                           template='plotly_white',
-                          height=550,  # Increased height
-                          width=1800)  # Increased width
+                          height=600,  # Adjusted height
+                          width=1600)  # Adjusted width
 
         st.plotly_chart(fig)
+
+# Tooltips under the predict button
+st.sidebar.subheader('Tooltips')
+st.sidebar.write('''
+- **Stock Ticker**: The symbol representing the stock (e.g., GOOGL for Google).
+- **Prediction Range**: Number of future days to predict.
+- **Start Date**: The start date for fetching historical data.
+- **End Date**: The end date for fetching historical data.
+- **Predict Button**: Click to generate predictions.
+''')
