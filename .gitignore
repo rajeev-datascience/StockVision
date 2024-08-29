@@ -1,0 +1,7 @@
+new_venv38/
+*.pyc
+__pycache__/
+.DS_Store
+*.env
+.idea/
+pyvenv.cfg
