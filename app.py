@@ -93,8 +93,8 @@ if st.sidebar.button('Predict'):
                           xaxis_title='Date',
                           yaxis_title='Stock Price',
                           template='plotly_white',
-                          height=600,  # Adjusted height
-                          width=1600)  # Adjusted width
+                          height=500,  # Adjusted height
+                          width=1400)  # Adjusted width
 
         st.plotly_chart(fig)
 
