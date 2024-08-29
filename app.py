@@ -85,16 +85,42 @@ if st.sidebar.button('Predict'):
 
         # Plot the actual and predicted prices using Plotly
         fig = go.Figure()
-        fig.add_trace(go.Scatter(x=data['Date'], y=data['Close'], mode='lines', name='Actual Stock Price'))
-        fig.add_trace(go.Scatter(x=data['Date'][time_step + 1:], y=predictions.flatten(), mode='lines', name='Predicted Stock Price'))
-        fig.add_trace(go.Scatter(x=future_dates, y=future_predictions.flatten(), mode='lines', name='Future Predictions', line=dict(dash='dash')))
+        fig.add_trace(go.Scatter(
+            x=data['Date'], 
+            y=data['Close'], 
+            mode='lines', 
+            name='Actual Stock Price',
+            line=dict(width=3)))  # Increased line thickness
+        fig.add_trace(go.Scatter(
+            x=data['Date'][time_step + 1:], 
+            y=predictions.flatten(), 
+            mode='lines', 
+            name='Predicted Stock Price',
+            line=dict(width=3)))  # Increased line thickness
+        fig.add_trace(go.Scatter(
+            x=future_dates, 
+            y=future_predictions.flatten(), 
+            mode='lines', 
+            name='Future Predictions', 
+            line=dict(dash='dash', width=3)))  # Increased line thickness for future predictions
 
-        fig.update_layout(title='Stock Price Prediction and Forecasting',
-                          xaxis_title='Date',
-                          yaxis_title='Stock Price',
-                          template='plotly_white',
-                          height=500,  # Adjusted height
-                          width=1400)  # Adjusted width
+        fig.update_layout(
+            title='Stock Price Prediction and Forecasting',
+            xaxis_title='Date',
+            yaxis_title='Stock Price',
+            template='plotly_white',
+            height=500,  # Reduced height
+            width=1400,  # Reduced width
+            xaxis=dict(showgrid=True),  # Added gridlines for x-axis
+            yaxis=dict(showgrid=True),  # Added gridlines for y-axis
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            )  # Positioned legend above the chart
+        )
 
         st.plotly_chart(fig)
 
