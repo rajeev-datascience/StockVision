@@ -1,5 +1,8 @@
 # StockVision: AI-Driven Stock Prediction
 
+## Live Demo
+Check out the live app on Heroku: [StockVision on Heroku](https://marketvisionai-1a1d5a434a73.herokuapp.com/)
+
 *Empowering smart investment decisions through AI and time series forecasting.*
 
 ---
