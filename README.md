@@ -24,13 +24,13 @@ Here’s a sneak peek into **StockVision** and what it offers. Below are some sn
    The main dashboard where users can input stock tickers, select prediction ranges, and visualize results with just a few clicks.
 
    ![Home Screen](https://github.com/rajeev-datascience/StockVision_V2/blob/main/StockVision%20Images/home_screen.png)
-
-2. **Real-Time Predictions**:  
+   
+3. **Real-Time Predictions**:  
    View real-time predictions based on the latest stock data. This screen demonstrates how StockVision integrates live data to provide accurate, up-to-the-minute forecasts.
 
    ![Real-Time Prediction](https://github.com/rajeev-datascience/StockVision_V2/blob/main/StockVision%20Images/real_time_prediction.png)
 
-3. **Interactive Graphs**:  
+4. **Interactive Graphs**:  
    Explore trends with interactive graphs that allow you to zoom, pan, and analyze different time frames, giving you a deeper understanding of the stock's performance.
 
    ![Interactive Graph](https://github.com/rajeev-datascience/StockVision_V2/blob/main/StockVision%20Images/interactive_graphs.png)
