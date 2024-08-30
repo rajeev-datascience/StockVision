@@ -20,7 +20,7 @@ Here’s a sneak peek into **StockVision** and what it offers. Below are some sn
 1. **Home Screen**:  
    The main dashboard where users can input stock tickers, select prediction ranges, and visualize results with just a few clicks.
 
-   ![alt text](https://github.com/user/repo/path/to/image.png)
+   ![Home Screen](https://github.com/rajeev-datascience/StockVision_V2/blob/main/StockVision%20Images/home_screen.png))
 
 2. **Real-Time Predictions**:  
    View real-time predictions based on the latest stock data. This screen demonstrates how StockVision integrates live data to provide accurate, up-to-the-minute forecasts.
