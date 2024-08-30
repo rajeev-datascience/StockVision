@@ -25,7 +25,7 @@ Here’s a sneak peek into **StockVision** and what it offers. Below are some sn
 2. **Real-Time Predictions**:  
    View real-time predictions based on the latest stock data. This screen demonstrates how StockVision integrates live data to provide accurate, up-to-the-minute forecasts.
 
-   ![alt text](https://github.com/user/repo/path/to/image.png)
+   ![Real-Time Prediction](https://github.com/rajeev-datascience/StockVision_V2/blob/main/StockVision%20Images/real_time_prediction.png)
 
 3. **Interactive Graphs**:  
    Explore trends with interactive graphs that allow you to zoom, pan, and analyze different time frames, giving you a deeper understanding of the stock's performance.
