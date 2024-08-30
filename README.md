@@ -30,7 +30,7 @@ Here’s a sneak peek into **StockVision** and what it offers. Below are some sn
 3. **Interactive Graphs**:  
    Explore trends with interactive graphs that allow you to zoom, pan, and analyze different time frames, giving you a deeper understanding of the stock's performance.
 
-   ![alt text](https://github.com/user/repo/path/to/image.png)
+   ![Interactive Graph](https://github.com/rajeev-datascience/StockVision_V2/blob/main/StockVision%20Images/interactive_graphs.png)
 
 These visuals give you a glimpse of how StockVision can help you stay ahead in the financial game, combining ease of use with cutting-edge technology.
 
